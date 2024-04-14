@@ -17,7 +17,9 @@ const Estate = ({estate}) => {
             <h4 className=" flex items-center gap-1 text-blue-800"><IoLocationOutline></IoLocationOutline>{location}</h4>
             <h2 className="card-title">{estate_title}</h2>
             <h3 className="flex items-center text-lg font-bold gap-2 text-yellow-700"><HiHashtag></HiHashtag>{segment_name}</h3>
+            <hr />
             <p>{description.slice(0,88)}......</p>
+            <hr />
             <div className="flex gap-10 mt-4">
                 <h3 className="flex items-center text-lg gap-1"><MdOutlineHome size={20}></MdOutlineHome>{area}</h3>
                 <h3 className="text-lg font-bold">{price}</h3>

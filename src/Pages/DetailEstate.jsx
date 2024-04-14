@@ -1,6 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { HiHashtag } from "react-icons/hi";
+import { MdOutlineHome } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
 
 const DetailEstate = () => {
   const { id } = useParams();
@@ -22,9 +25,9 @@ const DetailEstate = () => {
   return (
     <div>
       <Nav></Nav>
-      <h3>{estate_title}</h3>
       {/* card */}
-      <div className="my-20">
+      
+      <div className="my-10">
         <div className="bg-gray-100 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row -mx-4">
@@ -38,72 +41,50 @@ const DetailEstate = () => {
                 </div>
               </div>
               <div className="md:flex-1 px-4">
-                <h2 className="text-2xl font-bold mb-2">
+                <h2 className="text-4xl lg:mt-4 font-bold mb-2">
                  {estate_title}
                 </h2>
+                <h3 className="flex items-center text-lg font-bold gap-2 text-yellow-700"><HiHashtag></HiHashtag>{segment_name}</h3>
+                <hr className="my-4"/>
                 <p className=" text-sm mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  sed ante justo. Integer euismod libero id mauris malesuada
-                  tincidunt.
+                  {description}
                 </p>
+                <hr className="my-4"/>
                 <div className="flex mb-4">
                   <div className="mr-4">
-                    <span className="font-bold ">
+                    <span className="font-bold mr-1 ">
                       Price:
                     </span>
                     <span className="">
-                      $29.99
+                    {price}
                     </span>
                   </div>
                   <div>
-                    <span className="font-bold ">
-                      Availability:
+                    <span className="font-bold mr-1 ">
+                      Status:
                     </span>
                     <span className="">
-                      In Stock
+                      {status}
                     </span>
                   </div>
                 </div>
+                <div className="flex gap-4 mt-4">
+                <h3 className="flex items-center text-lg gap-1"><MdOutlineHome size={20}></MdOutlineHome>{area}</h3>
+                <h4 className=" flex items-center gap-1 text-blue-800"><IoLocationOutline></IoLocationOutline>{location}</h4>
+            </div>
+            <hr className="my-4"/>
                 <div className="mb-4">
                   <span className="font-bold ">
-                    Select Color:
+                    Facilities:
                   </span>
-                  <div className="flex items-center mt-2">
-                    <button className="w-6 h-6 rounded-full  mr-2"></button>
-                    <button className="w-6 h-6 rounded-full bg-red-500 dark:bg-red-700 mr-2"></button>
-                    <button className="w-6 h-6 rounded-full bg-blue-500 dark:bg-blue-700 mr-2"></button>
-                    <button className="w-6 h-6 rounded-full bg-yellow-500 dark:bg-yellow-700 mr-2"></button>
+                  <div className="flex flex-col sm:flex-row  items-center mt-4">
+                  {
+                    facilities.map((faci,index)=><div key={index}>
+                       <button className=" mb-2 bg-[#c09828] text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 ">{faci}
+                    </button>
+                    </div>)
+                  } 
                   </div>
-                </div>
-                <div className="mb-4">
-                  <span className="font-bold ">
-                    Select Size:
-                  </span>
-                  <div className="flex items-center mt-2">
-                    <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                      S
-                    </button>
-                    <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                      M
-                    </button>
-                    <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                      L
-                    </button>
-                    <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                      XL
-                    </button>
-                    <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">
-                      XXL
-                    </button>
-                  </div>
-                </div>
-                <div>
-                  <span className="font-bold ">
-                    Product Description:
-                  </span>
-                  <p className=" text-sm mt-2">
-                  {description}
-                  </p>
                 </div>
               </div>
             </div>
