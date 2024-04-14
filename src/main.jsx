@@ -12,6 +12,7 @@ import Root from './Root/Root';
 import Login from './ForUser/Login';
 import Register from './ForUser/Register';
 import AuthProvider from './ForUser/AuthProvider/AuthProvider';
+import DetailEstate from './Pages/DetailEstate';
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,13 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>
-      }
+      },
     ]
+  },
+  {
+    path: '/detail/:id',
+    element: <DetailEstate></DetailEstate>,
+    loader: ()=>fetch('/estate.json')
   },
   {
     path: '/login',
