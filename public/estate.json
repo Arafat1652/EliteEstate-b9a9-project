@@ -7,7 +7,7 @@
       "price": "$700,000",
       "status": "sale",
       "area": "3,000 sq ft",
-      "location": "Suburban Neighborhood",
+      "location": "New York City, New York",
       "facilities": ["Backyard", "Garage", "Garden"],
       "image": "https://images.unsplash.com/photo-1594540992254-0e2239661647?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -19,7 +19,7 @@
       "price": "$500,000",
       "status": "sale",
       "area": "2,500 sq ft",
-      "location": "City Center",
+      "location": "Los Angeles, California",
       "facilities": ["Private Patio", "Community Pool", "Attached Garage"],
       "image": "https://images.unsplash.com/photo-1430285561322-7808604715df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRvd25ob3VzZXxlbnwwfHwwfHx8MA%3D%3D"
     },
@@ -31,7 +31,7 @@
       "price": "$1,200,000",
       "status": "sale",
       "area": "5,000 sq ft",
-      "location": "Prime Residential Area",
+      "location": "Miami, Florida",
       "facilities": ["Fitness Center", "Swimming Pool", "24/7 Security"],
       "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D"
     },
@@ -43,7 +43,7 @@
       "price": "$900,000",
       "status": "sale",
       "area": "4,000 sq ft",
-      "location": "Near University Campus",
+      "location": "Austin, Texas",
       "facilities": ["Study Rooms", "Laundry Facilities", "Recreation Area"],
       "image": "https://www.sanjuancollege.edu/media/sanjuancollegeedu-2023/images/homepage/student-life/housing/student-housing-dorms-1200x800.jpg"
     },
@@ -55,7 +55,7 @@
       "price": "$1,500,000",
       "status": "sale",
       "area": "6,000 sq ft",
-      "location": "Scenic Location",
+      "location": "Denver, Colorado",
       "facilities": ["Community Center", "Walking Trails", "Healthcare Services"],
       "image": "https://cdn.cheapism.com/images/091318_prestigious_retirement_communities_sl.max-825x550_mazcNqp.jpg"
     },
@@ -67,7 +67,7 @@
       "price": "$3,000/week",
       "status": "rent",
       "area": "7,000 sq ft",
-      "location": "Beachfront",
+      "location": "Seattle, Washington",
       "facilities": ["Private Beach Access", "Infinity Pool", "Outdoor Dining Area"],
       "image": "https://images.unsplash.com/photo-1559767949-0faa5c7e9992?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
     }
