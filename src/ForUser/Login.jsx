@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Nav from "../Pages/Nav";
 import { useContext, useState } from "react";
 import { AuthContext } from "./AuthProvider/AuthProvider";
@@ -8,7 +8,9 @@ import Footer from "../Pages/Footer";
 
 const Login = () => {
     const {signInUser, signInWithGoogle, signInWithGitHub} = useContext(AuthContext)
-
+    const location = useLocation()
+    // console.log(location,'location in the ')
+    const navigate = useNavigate()
     const [loginError, setLoginError] = useState('')
     const [successLogin, setSuccessLogin] = useState('')
 
@@ -27,6 +29,8 @@ const Login = () => {
       .then(result=>{
           console.log(result.user)
           setSuccessLogin('Logged in succesfully')
+          navigate(location?.state ? location.state : '/')
+          
       })
     //   console.log(e,'e')
     //   e.target.reset()
@@ -39,10 +43,32 @@ const Login = () => {
     } 
     const handleGoogleLogIn=()=>{
         signInWithGoogle()
+        .then(result=>{
+            console.log(result.user)
+            setSuccessLogin('Logged in succesfully')
+            navigate(location?.state ? location.state : '/')
+            
+        })
+  
+        .catch(error=>{
+            console.error(error)
+            setLoginError(error.code)
+        })
     }
 
     const handleGitHubSignIn=()=>{
         signInWithGitHub()
+        .then(result=>{
+            console.log(result.user)
+            setSuccessLogin('Logged in succesfully')
+            navigate(location?.state ? location.state : '/')
+            
+        })
+  
+        .catch(error=>{
+            console.error(error)
+            setLoginError(error.code)
+        })
     }
 
     return (

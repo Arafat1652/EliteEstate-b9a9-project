@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Nav from "../Pages/Nav";
 import { useContext, useState } from "react";
 import { AuthContext } from "./AuthProvider/AuthProvider";
@@ -9,7 +9,8 @@ import Footer from "../Pages/Footer";
 
 
 const Register = () => {
-    const {createUser} = useContext(AuthContext)
+    const {createUser, updateUserProfile} = useContext(AuthContext)
+    const navigate = useNavigate()
     
     const [regError, setRegError] = useState('')
     const [successReg, setSuccessReg] = useState('')
@@ -17,11 +18,15 @@ const Register = () => {
     
     const { register,handleSubmit,formState: { errors },} = useForm()
       const onSubmit = (data) => {
-        const {email, password} = data
+        const {email, password,image, fullName} = data
 
         setRegError('')
         setSuccessReg('')
-        if(password.length<6){
+        if(!/@gmail\.com$/.test(email)){
+            setRegError('give a valid email')
+            return
+        }
+       else if(password.length<6){
             return  setRegError('password must be 6 character or longer')
            
         }
@@ -35,9 +40,13 @@ const Register = () => {
         }
 
         createUser(email, password)
-        .then(result=>{
-            console.log(result.user)
-            setSuccessReg('Your Registration Succesfull')
+        .then(()=>{
+           
+            updateUserProfile(fullName, image)
+            .then(()=>{
+                navigate('/')
+            })
+            // setSuccessReg('Your Registration Succesfull')
         })
         .catch(error=>{
             console.error(error)
@@ -58,12 +67,13 @@ const Register = () => {
             </div>
             <div className="space-y-1 text-sm">
                 <label htmlFor="username" className="block text-gray-400">Email</label>
-                <input type="text" name="username" id="username" placeholder="Your Email" className="w-full px-4 py-3 rounded-md border-gray-700  text-black focus:border-violet-400" {...register("email", { required: true })} />
+                <input type="email" name="username" id="username" placeholder="Your Email" className="w-full px-4 py-3 rounded-md border-gray-700  text-black focus:border-violet-400" {...register("email", { required: true })} />
                 {errors.email && <span className="text-red-400">This field is required</span>}
             </div>
             <div className="space-y-1 text-sm">
                 <label htmlFor="username" className="block text-gray-400">Photo URL</label>
-                <input type="text" name="username" id="username" placeholder="Photo URL" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" {...register("image")}/>
+                <input type="text" name="username" id="username" placeholder="Photo URL" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" {...register("image", { required: true })}/>
+                {errors.image && <span className="text-red-400">This field is required</span>}
             </div>
             <div className="space-y-1 text-sm relative">
                 <label htmlFor="password" className="block text-gray-400">Password</label>

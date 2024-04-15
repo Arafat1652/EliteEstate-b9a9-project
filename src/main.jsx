@@ -13,6 +13,8 @@ import Login from './ForUser/Login';
 import Register from './ForUser/Register';
 import AuthProvider from './ForUser/AuthProvider/AuthProvider';
 import DetailEstate from './Pages/DetailEstate';
+import PrivateRoute from './Pages/PrivateRoute';
+import UpdateProfile from './Pages/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -23,11 +25,15 @@ const router = createBrowserRouter([
         path:'/',
         element: <Home></Home>
       },
+      {
+        path: '/update',
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+      }
     ]
   },
   {
     path: '/detail/:id',
-    element: <DetailEstate></DetailEstate>,
+    element: <PrivateRoute><DetailEstate></DetailEstate></PrivateRoute>,
     loader: ()=>fetch('/estate.json')
   },
   {
