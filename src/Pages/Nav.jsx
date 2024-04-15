@@ -20,7 +20,7 @@ const handleLogOut =()=>{
 }
 
   return (
-    <div className="navbar bg-base-100 max-w-7xl mx-auto">
+    <div data-aos='fade-down' data-aos-delay='400' className="navbar bg-base-100 max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const handleLogOut =()=>{
          {navLink}
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl font-bold">Elite Estate</a>
+        <a  className="btn btn-ghost text-2xl font-bold">Elite Estate</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-horizontal px-1">

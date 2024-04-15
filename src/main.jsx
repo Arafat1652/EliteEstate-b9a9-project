@@ -2,6 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,11 +20,13 @@ import AuthProvider from './ForUser/AuthProvider/AuthProvider';
 import DetailEstate from './Pages/DetailEstate';
 import PrivateRoute from './Pages/PrivateRoute';
 import UpdateProfile from './Pages/UpdateProfile';
+import ErrorPage from './Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',

@@ -75,9 +75,9 @@ const Login = () => {
         
      <div>
         <Nav></Nav>
-           <div className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100">
+           <div data-aos='fade-left' data-aos-duration='1000' className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100">
         <h1 className="text-2xl font-bold text-center text-gray-700">Login</h1>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form data-aos='fade-right' data-aos-delay='600' onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div className="space-y-1 text-sm">
                 <label htmlFor="username" className="block text-gray-400">Email</label>
                 <input type="text" name="username" id="username" placeholder="Your Email" className="w-full px-4 py-3 rounded-md border-gray-700  text-black focus:border-violet-400" {...register("email", { required: true })} />

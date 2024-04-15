@@ -25,7 +25,7 @@ const UpdateProfile = () => {
 
     return (
         <div>
-            <div className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100 ">
+            <div data-aos='fade-left' data-aos-duration='1000' className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100 ">
                 <h1 className="text-2xl font-bold text-center text-gray-700">Update Profile</h1>
                 <form onSubmit={handleUpdateSubmit} noValidate="" action="" className="space-y-6">
                     <div className="space-y-1 text-sm">

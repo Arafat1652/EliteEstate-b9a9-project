@@ -19,8 +19,8 @@ const Banner = () => {
         }}>
             <div className="hero-content mr-60">
               <div>
-                <h1 className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
-                <p className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living. </p>
+                <h1 data-aos="fade-down" data-aos-duration='1000' className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
+                <p data-aos="fade-right" data-aos-duration='1000' className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living. </p>
               </div>
             </div>
           </div>
@@ -32,8 +32,8 @@ const Banner = () => {
         }}>
             <div className="hero-content mr-60">
               <div>
-                <h1 className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
-                <p className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living </p>
+                <h1 data-aos="fade-down" data-aos-duration='1000' className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
+                <p data-aos="fade-right" className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living </p>
               </div>
             </div>
           </div>
@@ -45,8 +45,8 @@ const Banner = () => {
         }}>
            <div className="hero-content mr-60">
               <div>
-                <h1 className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
-                <p className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living </p>
+                <h1 data-aos="fade-down" data-aos-duration='1000' className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
+                <p data-aos="fade-right" className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living </p>
               </div>
             </div>
           </div>
