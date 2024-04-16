@@ -6,6 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
 
+import { ToastContainer} from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import {
   createBrowserRouter,
@@ -22,6 +25,7 @@ import PrivateRoute from './Pages/PrivateRoute';
 import UpdateProfile from './Pages/UpdateProfile';
 import ErrorPage from './Pages/ErrorPage';
 import AboutUs from './Pages/AboutUs';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -61,8 +65,11 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <HelmetProvider>
    <AuthProvider>
    <RouterProvider router={router} />
    </AuthProvider>
+   </HelmetProvider>
+   <ToastContainer position="top-center" autoClose={2000}/>
   </React.StrictMode>,
 )

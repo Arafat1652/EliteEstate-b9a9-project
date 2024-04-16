@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../ForUser/AuthProvider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 
 const UpdateProfile = () => {
@@ -14,17 +16,20 @@ const UpdateProfile = () => {
         e.preventDefault();
         updateProfile(auth.currentUser, { displayName: name, photoURL: image })
             .then(() => {
-                console.log('Profile updated successfully');
+                toast.success('Profile updated successfully');
                 // Update user state/context here
                 setUser({ ...user, displayName: name, email: email, photoURL: image });
             })
             .catch((error) => {
-                console.error('Error updating profile:', error);
+                toast.error('Error updating profile:', error);
             });
     }
 
     return (
         <div>
+            <Helmet>
+                <title>update profile || EliteEstate</title>
+            </Helmet>
             <div data-aos='fade-left' data-aos-duration='1000' className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100 ">
                 <h1 className="text-2xl font-bold text-center text-gray-700">Update Profile</h1>
                 <form onSubmit={handleUpdateSubmit} noValidate="" action="" className="space-y-6">

@@ -4,6 +4,8 @@ import { useContext, useState } from "react";
 import { AuthContext } from "./AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 import Footer from "../Pages/Footer";
+import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 
 const Login = () => {
@@ -21,14 +23,14 @@ const Login = () => {
       setLoginError('')
       setSuccessLogin('')
         if(!/@gmail\.com$/.test(email)){
-            setLoginError('give a valid email')
-            return
+            return toast.error ('give a valid email')
+           
         }
 
       signInUser(email, password)
       .then(result=>{
           console.log(result.user)
-          setSuccessLogin('Logged in succesfully')
+          toast.success('Logged in succesfully')
           navigate(location?.state ? location.state : '/')
           
       })
@@ -37,7 +39,7 @@ const Login = () => {
 
       .catch(error=>{
           console.error(error)
-          setLoginError(error.code)
+          toast.error(error.code)
       })
 
     } 
@@ -45,14 +47,13 @@ const Login = () => {
         signInWithGoogle()
         .then(result=>{
             console.log(result.user)
-            setSuccessLogin('Logged in succesfully')
+            toast('Logged in succesfully')
             navigate(location?.state ? location.state : '/')
             
         })
   
         .catch(error=>{
-            console.error(error)
-            setLoginError(error.code)
+            toast.error(error.code)
         })
     }
 
@@ -60,20 +61,23 @@ const Login = () => {
         signInWithGitHub()
         .then(result=>{
             console.log(result.user)
-            setSuccessLogin('Logged in succesfully')
+            toast.success('Logged in succesfully')
             navigate(location?.state ? location.state : '/')
             
         })
   
         .catch(error=>{
             console.error(error)
-            setLoginError(error.code)
+            toast.error(error.code)
         })
     }
 
     return (
         
      <div>
+         <Helmet>
+                <title>Login || EliteEstate</title>
+            </Helmet>
         <Nav></Nav>
            <div data-aos='fade-left' data-aos-duration='1000' className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100">
         <h1 className="text-2xl font-bold text-center text-gray-700">Login</h1>

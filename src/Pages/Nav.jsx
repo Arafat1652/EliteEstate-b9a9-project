@@ -48,7 +48,7 @@ const handleLogOut =()=>{
          {navLink}
           </ul>
         </div>
-        <a  className="btn btn-ghost text-2xl font-bold"><RiBuilding2Fill className="fill-indigo-600"></RiBuilding2Fill> Elite Estate</a>
+        <a  className="btn btn-ghost text-2xl font-bold"><RiBuilding2Fill className="fill-indigo-600"></RiBuilding2Fill> EliteEstate</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-horizontal px-1">

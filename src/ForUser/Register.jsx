@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import Footer from "../Pages/Footer";
+import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 
 const Register = () => {
@@ -23,39 +25,40 @@ const Register = () => {
         setRegError('')
         setSuccessReg('')
         if(!/@gmail\.com$/.test(email)){
-            setRegError('give a valid email')
-            return
+            // setRegError('give a valid email')
+            
+            return toast.error('give a valid email')
         }
        else if(password.length<6){
-            return  setRegError('password must be 6 character or longer')
+            return toast.error('password must be 6 character or longer')
            
         }
-        else if(!/^(?=.*[A-Z]).+$/.test(password)){
-            setRegError('password must have at least one uppercase character')
-            return
+        else if(!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)){
+            return toast.error('password must have at least one uppercase and one lower case character')
+           
         }
-        else if(!/^(?=.*[a-z]).+$/.test(password)){
-            setRegError('password must have at least one lowercase character')
-            return
-        }
+      
 
         createUser(email, password)
         .then(()=>{
            
+            toast.success('Your Registration Succesfull')
             updateUserProfile(fullName, image)
             .then(()=>{
                 navigate('/')
             })
-            // setSuccessReg('Your Registration Succesfull')
         })
         .catch(error=>{
             console.error(error)
-            setRegError(error.code)
+            toast.error(error.code)
         })
       } 
 
     return (
         <div>
+             <Helmet>
+                <title>Register || EliteEstate</title>
+            </Helmet>
         <Nav></Nav>
            <div data-aos='fade-left' data-aos-duration='1000' className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200 text-gray-100">
         <h1 className="text-2xl font-bold text-center text-gray-700">Register</h1>

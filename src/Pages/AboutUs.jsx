@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 
 
 
 const AboutUs = () => {
     return (
        <div>
+         <Helmet>
+                <title>AboutUs || EliteEstate</title>
+            </Helmet>
         {/* reviews */}
         
         <section id="testimonials" aria-label="What our customers are saying" className="bg-slate-50 py-20 sm:py-32 mb-24">

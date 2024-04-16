@@ -5,6 +5,7 @@ import { HiHashtag } from "react-icons/hi";
 import { MdOutlineHome } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import Marquee from "react-fast-marquee";
+import { Helmet } from "react-helmet-async";
 
 const DetailEstate = () => {
   const { id } = useParams();
@@ -25,12 +26,15 @@ const DetailEstate = () => {
   } = estate;
   return (
     <div>
+       <Helmet>
+                <title>Details {id} || EliteEstate</title>
+            </Helmet>
       <Nav></Nav>
       {/* card */}
       
         <div className="bg-[#ffcc41] p-24 w-[95%] mx-auto">
         <Marquee>
-          <div className=" flex mr-8 gap-10 items-center">
+          <div className=" flex gap-10 items-center">
           <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-7.png" alt="" />
           <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-1.png" alt="" />
           <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-2.png" alt="" />
