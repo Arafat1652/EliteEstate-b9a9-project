@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import './nav.css'
 import { useContext } from "react";
 import { AuthContext } from "../ForUser/AuthProvider/AuthProvider";
+import { RiBuilding2Fill } from "react-icons/ri";
 
 const Nav = () => {
   
@@ -47,7 +48,7 @@ const handleLogOut =()=>{
          {navLink}
           </ul>
         </div>
-        <a  className="btn btn-ghost text-2xl font-bold">Elite Estate</a>
+        <a  className="btn btn-ghost text-2xl font-bold"><RiBuilding2Fill className="fill-indigo-600"></RiBuilding2Fill> Elite Estate</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-horizontal px-1">

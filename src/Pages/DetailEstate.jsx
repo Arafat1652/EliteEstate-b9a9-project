@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { HiHashtag } from "react-icons/hi";
 import { MdOutlineHome } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import Marquee from "react-fast-marquee";
 
 const DetailEstate = () => {
   const { id } = useParams();
@@ -26,7 +27,20 @@ const DetailEstate = () => {
     <div>
       <Nav></Nav>
       {/* card */}
-        <img className="mx-auto h-[500px] w-[95%] " src='https://i.im.ge/2024/04/15/Zr7wdh.ai-generated-8684832-1280.jpeg' alt=""/>
+      
+        <div className="bg-[#ffcc41] p-24 w-[95%] mx-auto">
+        <Marquee>
+          <div className=" flex mr-8 gap-10 items-center">
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-7.png" alt="" />
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-1.png" alt="" />
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-2.png" alt="" />
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-3.png" alt="" />
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-4.png" alt="" />
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-5.png" alt="" />
+          <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-6.png" alt="" />
+          </div>
+          </Marquee>
+        </div>
       <div className="my-10">
         <div className="bg-gray-100 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
