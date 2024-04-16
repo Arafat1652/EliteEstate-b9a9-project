@@ -21,6 +21,7 @@ import DetailEstate from './Pages/DetailEstate';
 import PrivateRoute from './Pages/PrivateRoute';
 import UpdateProfile from './Pages/UpdateProfile';
 import ErrorPage from './Pages/ErrorPage';
+import AboutUs from './Pages/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/update',
         element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+      },
+      {
+        path: '/about',
+        element: <PrivateRoute><AboutUs></AboutUs></PrivateRoute>
       }
     ]
   },

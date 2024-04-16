@@ -13,6 +13,7 @@ const Nav = () => {
     const navLink = <>
     <li className="mr-4 font-semibold"><NavLink to='/'>Home</NavLink></li>
     <li className="mr-4 font-semibold"><NavLink to='/update'>Update profile</NavLink></li>
+    <li className="mr-4 font-semibold"><NavLink to='/about'>About Us</NavLink></li>
 </>
 
 const handleLogOut =()=>{

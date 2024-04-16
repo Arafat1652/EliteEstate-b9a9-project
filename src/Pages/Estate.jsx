@@ -25,6 +25,7 @@ const Estate = ({estate}) => {
                 <h3 data-aos='fade-right' data-aos-delay='1100' className="text-lg font-bold text-[#fb8053]">{price}</h3>
             </div>
             <div data-aos='fade-right' data-aos-delay='1200' className="card-actions">
+                
             <Link to={`/detail/${id}`} className="btn bg-[#ffcc41] mt-6 w-full">View Property</Link>
             </div>
         </div>

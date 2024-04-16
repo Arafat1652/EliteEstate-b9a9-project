@@ -26,7 +26,7 @@ const DetailEstate = () => {
     <div>
       <Nav></Nav>
       {/* card */}
-      
+        <img className="mx-auto h-[500px] w-[95%] " src='https://i.im.ge/2024/04/15/Zr7wdh.ai-generated-8684832-1280.jpeg' alt=""/>
       <div className="my-10">
         <div className="bg-gray-100 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

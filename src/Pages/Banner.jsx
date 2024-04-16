@@ -13,7 +13,7 @@ const Banner = () => {
           clickable: true,
         }}
       loop={true}>
-    <SwiperSlide><div className="my-8">
+    <SwiperSlide><div className="">
           <div className="hero h-[80vh] bg-cover object-center rounded-lg " style={{
           backgroundImage:"url(https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?cs=srgb&dl=pexels-expect-best-323780.jpg&fm=jpg)",
         }}>
@@ -26,7 +26,7 @@ const Banner = () => {
           </div>
       </div></SwiperSlide>
 
-   <SwiperSlide> <div className="my-8">
+   <SwiperSlide> <div className="">
           <div className="hero h-[80vh] bg-cover object-center rounded-lg " style={{
           backgroundImage:"url(https://i.im.ge/2024/04/14/ZTicIp.house-1477041-1280.jpeg)",
         }}>
@@ -39,7 +39,7 @@ const Banner = () => {
           </div>
       </div></SwiperSlide>
 
-    <SwiperSlide> <div className="my-8">
+    <SwiperSlide> <div className="">
           <div className="hero h-[80vh] bg-cover object-center rounded-lg " style={{
           backgroundImage:"url(https://i.im.ge/2024/04/14/ZTi556.hall-621741-1280.jpeg)",
         }}>
