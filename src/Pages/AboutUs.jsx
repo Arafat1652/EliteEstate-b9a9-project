@@ -115,7 +115,7 @@ const AboutUs = () => {
                       <a href="#">Bonnie Green</a>
                   </h3>
                   <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
-                  <p className="mt-3 mb-4 font-light text-gray-500">Bonnie drives the technical strategy of the flowbite platform and brand.</p>
+                  <p className="mt-3 mb-4 font-light text-gray-500">Bonnie drives designs and develops websites, ensuring functionality.</p>
                   <ul className="flex space-x-4 sm:mt-0">
                       <li>
                           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -149,7 +149,7 @@ const AboutUs = () => {
                       <a href="#">Jese Leos</a>
                   </h3>
                   <span className="text-gray-500 dark:text-gray-400">CTO</span>
-                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives the technical strategy of the flowbite platform and brand.</p>
+                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives leads technological innovation, architecture, and oversees.</p>
                   <ul className="flex space-x-4 sm:mt-0">
                       <li>
                           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -183,7 +183,7 @@ const AboutUs = () => {
                       <a href="#">Michael Gough</a>
                   </h3>
                   <span className="text-gray-500 dark:text-gray-400">Senior Front-end Developer</span>
-                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Michael drives the technical strategy of the flowbite platform and brand.</p>
+                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Michael implements the user interface design and ensures seamless.</p>
                   <ul className="flex space-x-4 sm:mt-0">
                       <li>
                           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -217,7 +217,7 @@ const AboutUs = () => {
                       <a href="#">Lana Byrd</a>
                   </h3>
                   <span className="text-gray-500 dark:text-gray-400">Marketing & Sale</span>
-                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>
+                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">cultivates client relationships, identifies opportunities, revenue growth.</p>
                   <ul className="flex space-x-4 sm:mt-0">
                       <li>
                           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">

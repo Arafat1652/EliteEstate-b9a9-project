@@ -5,9 +5,9 @@ EliteEstate Live site:[https://b9a9-real-estate-aa792.web.app/](https://b9a9-rea
 
 ### NPM Packages Used
 
-- **AOS Package:** 
-- **React Hook Form:** 
-- **Swiper Slider:** 
+- **AOS Package** 
+- **React Hook Form** 
+- **Swiper Slider** 
 
 ## Features and Characteristics
 

@@ -4,8 +4,8 @@ import 'swiper/css/bundle';
 import { Navigation,Autoplay,Pagination } from 'swiper/modules';
 const Banner = () => {
   return (
-    <div>  
-      <Swiper navigation={true} modules={[Navigation,Autoplay, Pagination]}
+    <div className=''>  
+      <Swiper modules={[Navigation,Autoplay, Pagination]}
       autoplay={{
         delay: 2000,
       }}
@@ -13,40 +13,40 @@ const Banner = () => {
           clickable: true,
         }}
       loop={true}>
-    <SwiperSlide><div className="">
+    <SwiperSlide><div className="z-0">
           <div className="hero h-[80vh] bg-cover object-center rounded-lg " style={{
           backgroundImage:"url(https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?cs=srgb&dl=pexels-expect-best-323780.jpg&fm=jpg)",
         }}>
-            <div className="hero-content mr-60">
+            <div className="hero-content lg:mr-60 md:mr-40">
               <div>
-                <h1 data-aos="fade-down" data-aos-duration='1000' className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
-                <p data-aos="fade-right" data-aos-duration='1000' className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living. </p>
+                <h1  className="mb-4 text-[#ffffff] lg:w-[500px] md:text-4xl lg:text-6xl text-2xl font-bold">Buy or rent properties </h1>
+                <p className="mb-5 md:w-[500px] lg:w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living. </p>
               </div>
             </div>
           </div>
       </div></SwiperSlide>
 
-   <SwiperSlide> <div className="">
+   <SwiperSlide> <div className="z-0">
           <div className="hero h-[80vh] bg-cover object-center rounded-lg " style={{
           backgroundImage:"url(https://i.im.ge/2024/04/14/ZTicIp.house-1477041-1280.jpeg)",
         }}>
-            <div className="hero-content mr-60">
+           <div className="hero-content lg:mr-60 md:mr-40">
               <div>
-                <h1 data-aos="fade-down" data-aos-duration='1000' className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
-                <p data-aos="fade-right" className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living </p>
+                <h1  className="mb-4 text-[#ffffff] lg:w-[500px] md:text-4xl lg:text-6xl text-2xl font-bold">Buy or rent properties </h1>
+                <p className="mb-5 md:w-[500px] lg:w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living. </p>
               </div>
             </div>
           </div>
       </div></SwiperSlide>
 
-    <SwiperSlide> <div className="">
+    <SwiperSlide> <div className="z-0">
           <div className="hero h-[80vh] bg-cover object-center rounded-lg " style={{
           backgroundImage:"url(https://i.im.ge/2024/04/14/ZTi556.hall-621741-1280.jpeg)",
         }}>
-           <div className="hero-content mr-60">
+           <div className="hero-content lg:mr-60 md:mr-40">
               <div>
-                <h1 data-aos="fade-down" data-aos-duration='1000' className="mb-4 text-[#ffffff] w-[500px] text-6xl font-bold">Buy or rent properties </h1>
-                <p data-aos="fade-right" className="mb-5 w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living </p>
+                <h1  className="mb-4 text-[#ffffff] lg:w-[500px] md:text-4xl lg:text-6xl text-2xl font-bold">Buy or rent properties </h1>
+                <p className="mb-5 md:w-[500px] lg:w-[550px] text-white">Nestled in a tranquil neighborhood, this charming three-bedroom bungalow boasts a spacious backyard perfect for outdoor gatherings, while its tastefully renovated interior exudes warmth and comfort, offering a haven of relaxation and modern living. </p>
               </div>
             </div>
           </div>

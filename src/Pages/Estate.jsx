@@ -9,8 +9,8 @@ import { MdOutlineHome } from "react-icons/md";
 const Estate = ({estate}) => {
     const {id, estate_title, segment_name, description,price, status,area, location, image} = estate
     return (
-    <div data-aos='fade-right' data-aos-duration='800' className="relative card card-compact w-96 bg-base-100 shadow-xl">
-        <figure><img data-aos='zoom-in' data-aos-duration='1000' className=" " src={image} alt="Shoes" /></figure>
+    <div data-aos='fade-right' data-aos-duration='800' className="relative card card-compact w-full bg-base-100 shadow-xl">
+        <figure><img className=" " src={image} alt="Shoes" /></figure>
         <div className="absolute top-0 right-0 bg-red-500 text-white px-2 py-1 m-2 rounded-md text-sm font-medium">{status}
         </div>
         <div className="card-body">

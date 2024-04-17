@@ -32,7 +32,7 @@ const DetailEstate = () => {
       <Nav></Nav>
       {/* card */}
       
-        <div className="bg-[#ffcc41] p-24 w-[95%] mx-auto">
+        <div className="bg-[#ffcc41] lg:p-24 w-[95%] mx-auto">
         <Marquee>
           <div className=" flex gap-10 items-center">
           <img src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/client-7.png" alt="" />
@@ -59,17 +59,17 @@ const DetailEstate = () => {
                 </div>
               </div>
               <div className="md:flex-1 px-4">
-                <h2 data-aos='fade-left' data-aos-delay='1000' className="text-4xl lg:mt-4 font-bold mb-2">
+                <h2 data-aos='fade-right' data-aos-delay='1000' className="text-4xl lg:mt-4 font-bold mb-2">
                  {estate_title}
                 </h2>
-                <h3 data-aos='fade-left' data-aos-delay='1200' className="flex items-center text-lg font-bold gap-2 text-yellow-700"><HiHashtag></HiHashtag>{segment_name}</h3>
+                <h3 data-aos='fade-right' data-aos-delay='1200' className="flex items-center text-lg font-bold gap-2 text-yellow-700"><HiHashtag></HiHashtag>{segment_name}</h3>
                 <hr className="my-4"/>
-                <p data-aos='fade-left' data-aos-delay='1400' className=" text-sm mb-4">
+                <p data-aos='fade-right' data-aos-delay='1400' className=" text-sm mb-4">
                   {description}
                 </p>
                 <hr className="my-4"/>
-                <div data-aos='fade-left' data-aos-delay='1600' className="flex mb-4">
-                  <div data-aos='fade-left' data-aos-delay='1800' className="mr-4">
+                <div data-aos='fade-right' data-aos-delay='1600' className="flex mb-4">
+                  <div data-aos='fade-right' data-aos-delay='1800' className="mr-4">
                     <span className="font-bold mr-1 ">
                       Price:
                     </span>
@@ -77,7 +77,7 @@ const DetailEstate = () => {
                     {price}
                     </span>
                   </div>
-                  <div data-aos='fade-left' data-aos-delay='2000'>
+                  <div data-aos='fade-right' data-aos-delay='2000'>
                     <span className="font-bold mr-1 ">
                       Status:
                     </span>
@@ -87,15 +87,15 @@ const DetailEstate = () => {
                   </div>
                 </div>
                 <div className="flex gap-4 mt-4">
-                <h3 data-aos='fade-left' data-aos-delay='2000' className="flex items-center text-lg gap-1"><MdOutlineHome size={20}></MdOutlineHome>{area}</h3>
-                <h4 data-aos='fade-left' data-aos-delay='2200' className=" flex items-center gap-1 text-blue-800"><IoLocationOutline></IoLocationOutline>{location}</h4>
+                <h3 data-aos='fade-right' data-aos-delay='2000' className="flex items-center text-lg gap-1"><MdOutlineHome size={20}></MdOutlineHome>{area}</h3>
+                <h4 data-aos='fade-right' data-aos-delay='2200' className=" flex items-center gap-1 text-blue-800"><IoLocationOutline></IoLocationOutline>{location}</h4>
             </div>
             <hr className="my-4"/>
                 <div className="mb-4">
-                  <span data-aos='fade-left' data-aos-delay='2400' className="font-bold ">
+                  <span data-aos='fade-right' data-aos-delay='2400' className="font-bold ">
                     Facilities:
                   </span>
-                  <div data-aos='fade-left' data-aos-delay='2600' className="flex flex-col sm:flex-row  items-center mt-4">
+                  <div data-aos='fade-right' data-aos-delay='2400' className="flex flex-col sm:flex-row  items-center mt-4">
                   {
                     facilities.map((faci,index)=><div key={index}>
                        <button  className=" mb-2 bg-[#c09828] text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 ">{faci}

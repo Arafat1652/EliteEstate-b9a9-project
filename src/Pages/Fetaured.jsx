@@ -1,8 +1,8 @@
 const Fetaured = () => {
   return (
     <div>
-        <h3 data-aos='fade-down' className="text-3xl text-center font-semibold mt-16">Featured Categories</h3>
-        <p data-aos='fade-left' className="w-[600px] text-center mx-auto mb-10 mt-4">Highlight the best of your properties by using the List Category shortcode. You can list categories, types, cities, areas and states.</p>
+        <h3  className="text-3xl text-center font-semibold mt-16">Featured Categories</h3>
+        <p  className="lg:w-[600px] text-center mx-auto mb-10 mt-4">Highlight the best of your properties by using the List Category shortcode. You can list categories, types, cities, areas and states.</p>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <div className="grid gap-4">
           <div>

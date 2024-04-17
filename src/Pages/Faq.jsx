@@ -1,10 +1,10 @@
 const Faq = () => {
   return (
-    <div className="my-24">
-      <h3 data-aos='fade-left' data-aos-duration='600' className="px-4 py-8 text-black text-2xl uppercase font-bold">
+    <div className="my-10 lg:my-24">
+      <h3 data-aos='fade-right' data-aos-duration='600' className="px-4 py-8 text-black text-2xl uppercase font-bold">
         Frequently Asked Questions
       </h3>
-      <div data-aos='fade-left' data-aos-duration='800' className="collapse rounded-none mb-2 collapse-plus bg-indigo-200 hover:bg-indigo-400">
+      <div className="collapse rounded-none mb-2 collapse-plus bg-indigo-200 hover:bg-indigo-400">
         <input type="radio" name="my-accordion-3" defaultChecked />
         <div className="collapse-title text-xl font-medium ">
           Why is it considered necessary to register Agreement for Sale?
@@ -21,7 +21,7 @@ const Faq = () => {
           </p>
         </div>
       </div>
-      <div data-aos='fade-left' data-aos-delay='400' className="collapse rounded-none mb-2 collapse-plus bg-yellow-200 hover:bg-yellow-400">
+      <div  className="collapse rounded-none mb-2 collapse-plus bg-yellow-200 hover:bg-yellow-400">
         <input type="radio" name="my-accordion-3" />
         <div className="collapse-title text-xl font-medium ">
           What are the documents a buyer would need from me?
@@ -34,7 +34,7 @@ const Faq = () => {
           </p>
         </div>
       </div>
-      <div data-aos='fade-left' data-aos-delay='600' className="collapse rounded-none bg-pink-200	hover:bg-pink-400 mb-2 collapse-plus">
+      <div className="collapse rounded-none bg-pink-200	hover:bg-pink-400 mb-2 collapse-plus">
         <input type="radio" name="my-accordion-3" />
         <div className="collapse-title text-xl font-medium">
           How soon would I receive a call from you after writing?
